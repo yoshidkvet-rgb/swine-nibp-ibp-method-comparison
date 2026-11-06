@@ -1,0 +1,10 @@
+required <- c("readr","dplyr","geepack","lme4","pROC")
+missing <- required[!vapply(required, requireNamespace, quietly=TRUE, FUN.VALUE=logical(1))]
+if(length(missing)) stop("Install required packages: ", paste(missing, collapse=", "))
+dir.create("output", showWarnings=FALSE, recursive=TRUE)
+master_path <- file.path("data","NIBP_IBP_event_dataset_v3_registry_weight.csv")
+wp7_path <- file.path("data","WP7_event_covariates_for_reproduction.csv")
+if(!file.exists(master_path)) stop("Missing ",master_path)
+d <- readr::read_csv(master_path,show_col_types=FALSE)
+d <- dplyr::mutate(d, canonical_pig_id=as.character(canonical_pig_id), session_path=as.character(session_path))
+primary <- dplyr::filter(d, ibp_same_structural_valid==TRUE)

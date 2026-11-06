@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use this analysis code, please cite the archived software release."
+title: "R code for pressure-dependent disagreement between oscillometric and invasive arterial pressure measurements in anaesthetized pigs"
+type: software
+authors:
+  - family-names: "Yoshida"
+    given-names: "Kota"
+    affiliation: "Miyazaki University"
+version: "1.0.0"
+date-released: "2026-11-06"
+license: MIT
+keywords:
+  - blood pressure
+  - swine
+  - oscillometric blood pressure
+  - invasive arterial pressure
+  - method comparison
+  - Bland-Altman
+  - generalized estimating equations
+abstract: >-
+  Final verified R scripts used to reproduce the revised analyses for a retrospective
+  method-comparison study of oscillometric and invasive arterial pressure measurements
+  in anaesthetized pigs. Animal-level source data are not distributed because they are
+  corporate records of Boston Scientific Japan K.K.

@@ -1,0 +1,16 @@
+analysis,final_R_value,unit,note
+"Primary MAP pressure slope, animal-clustered GEE",-2.38789,mmHg per +10 mmHg,95% CI -3.164533 to -1.611247
+Session-clustered exchangeable GEE slope,-2.436391,mmHg per +10 mmHg,
+Session AR(1) GEE slope,-2.5538705,mmHg per +10 mmHg,rho=0.7651369
+Within-session pressure component,-2.5106168,mmHg per +10 mmHg,SE=0.3967223; P=2.477197e-10
+Between-session mean-pressure component,0.6415292,mmHg per +10 mmHg,SE=1.2404924; P=0.6050467
+Signal20 pressure slope,-1.570038,mmHg per +10 mmHg,95% CI -2.195680 to -0.944396
+Signal10 pressure slope,-1.437395,mmHg per +10 mmHg,95% CI -2.042460 to -0.832329
+Adapted external artifact-screen pressure slope,-1.26446,mmHg per +10 mmHg,95% CI -1.841592 to -0.687329
+Exclude |MAP difference|>120 pressure slope,-2.059616,mmHg per +10 mmHg,95% CI -2.714482 to -1.404750
+Body weight main effect per +10 kg,1.2970382,mmHg,P=0.4298068
+Pressure x weight interaction,-0.7549861,mmHg per +10 mmHg pressure per +10 kg,P=0.0812963
+Physiology-adjusted pressure slope,-2.277729,mmHg per +10 mmHg,
+Physiology + source-program adjusted pressure slope,-2.266832583,mmHg per +10 mmHg,
+"Deming slope, lambda=1",0.8662667,slope,3000 pig-cluster bootstrap 95% CI 0.7522364 to 0.9978518; median 0.8672322
+LoA lower limit at paired mean MAP 120,-52.027093,mmHg,1000 pig-cluster bootstrap 95% CI -62.2 to -43.8
